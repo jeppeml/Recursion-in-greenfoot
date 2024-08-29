@@ -19,7 +19,7 @@ public class MyWorld extends World
         super(900, 400, 1); 
         Fly fly = new Fly();
         addObject(fly, 450, 20);
-        haveChildren(fly, 220, 50, 6);
+        haveChildren(fly, 220, 50, 3);
     }
 
     private void haveChildren(Fly mother, int spacingX, int spacingY, int stopChild){

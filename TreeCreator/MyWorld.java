@@ -9,13 +9,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     private int tid=0;
-    private double lengthFactor = 1.3;
-    private double angleBetween = 40;
-    private double asymmetryLow = 0;
+    private double lengthFactor = 1.2;
+    private double angleBetween = 20;
+    private double asymmetryLow = 24;
     private double asymmetryHigh = 0;
-    private double randomness = 0;
+    private double randomness = 30;
     private double startAngle = 90;
-    private int iterations = 10;
+    private int iterations = 50;
     private boolean started = false;
     private int timer=0;
 
@@ -93,8 +93,8 @@ public class MyWorld extends World
 
         ssb = new StartStopBtn(this);
         addObject(ssb, 550,550);
-        iterations = 10;
-        randomness = 0;
+        iterations = 14;
+        randomness = 100;
         asymmetryLow = 0;
         asymmetryHigh = 0;
         drawit(startAngle,iterations);
@@ -118,7 +118,7 @@ public class MyWorld extends World
 
     private void drawit(double angle, int iterations){
         clearScreen();
-        DrawLineLAngle(0,this.getHeight()/2, angle,125,iterations);
+        DrawLineLAngle(0,this.getHeight()/2, angle,100,iterations);
     }
 
     public void DrawLineLAngle(int x1, int y1, double angle, double length, int stopIt)
